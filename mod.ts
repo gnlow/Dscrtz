@@ -1,7 +1,7 @@
 export class Discrete<T> {
     values: T[]
     weights: number[]
-    constructor(...items: [T, number][]){
+    constructor(items: [T, number][]){
         this.values = []
         this.weights = []
         let acc = 0

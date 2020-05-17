@@ -1,5 +1,5 @@
 {
-  "name": "dscrtz.js",
+  "name": "dscrtz",
   "version": "0.1.0",
   "description": "Generate random value from discrete distribution",
   "main": "index.js",

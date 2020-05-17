@@ -1,4 +1,4 @@
-class Discrete {
+module.exports = class Discrete {
     constructor(...items){
         this.values = []
         this.weights = []

@@ -1,5 +1,7 @@
-module.exports = class Discrete {
-    constructor(...items){
+export class Discrete<T> {
+    values: T[]
+    weights: number[]
+    constructor(...items: [T, number][]){
         this.values = []
         this.weights = []
         let acc = 0
@@ -10,10 +12,10 @@ module.exports = class Discrete {
             }
         )
     }
-    rand(seed){
+    rand(seed: number): T{
         const key = seed * this.weights[this.weights.length-1]
         let i = 0
-        while(this.weights[i]<key){
+        while(this.weights[i] < key){
             i++
         }
         return this.values[i]

@@ -7,7 +7,7 @@ npm i dscrtz
 ## Use
 ```js
 const Discrete = require("dscrtz")
-const distribution = new Discrete([["A", 11], ["B", 20], ["C", 15]])
+const distribution = new Discrete(["A", 11], ["B", 20], ["C", 15])
 
 distribution.rand(Math.random())
 ```
